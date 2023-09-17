@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Observer Pattern</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="subject-container" id="subject-container">
+        <div>
+          <h4>Subject Container</h4>
+        </div>
+        <div class="add-container">
+          <h5>Add new update</h5>
+          <input id="input-add-update" type="text" />
+          <button id="btn-add-update">Send</button>
+        </div>
+      </div>
+      <div class="observers-root">
+        <div class="observer-container" id="observer-1">
+          <h3>Observer 1</h3>
+          ---
+          <h4>Updates list</h4>
+          <div id="updates-observer-1">No updates yet</div>
+          ---
+          <h5>Subscribe: <span id="subscribe-observer-1">false</span></h5>
+          <button class="btn-subscribe">Subscribe</button>
+          <button class="btn-unsubscribe">Unsubscribe</button>
+        </div>
+
+        <div class="observer-container" id="observer-2">
+          <h3>Observer 1</h3>
+          ---
+          <h4>Updates list</h4>
+          <div id="updates-observer-2">No updates yet</div>
+          ---
+          <h5>Subscribe: <span id="subscribe-observer-2">false</span></h5>
+          <button class="btn-subscribe">Subscribe</button>
+          <button class="btn-unsubscribe">Unsubscribe</button>
+        </div>
+
+        <div class="observer-container" id="observer-3">
+          <h3>Observer 1</h3>
+          ---
+          <h4>Updates list</h4>
+          <div id="updates-observer-3">No updates yet</div>
+          ---
+          <h5>Subscribe: <span id="subscribe-observer-3">false</span></h5>
+          <button class="btn-subscribe">Subscribe</button>
+          <button class="btn-unsubscribe">Unsubscribe</button>
+        </div>
+
+      </div>
+    </main>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"
+  ></script>
+  <script src="./index.js"></script>
+</html>

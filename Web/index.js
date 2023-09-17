@@ -53,7 +53,6 @@ class Observer {
 
   display() {
     $(`#updates-${this.idParent}`).html(
-      // make an ul with the updates
       this.updates.map((update) => `<li>${update}</li>`).join("")
     );
   }
@@ -78,7 +77,6 @@ $(function () {
 
   $("[class*=btn-subscribe]").on("click", function () {
     let idParent = $(this).parent().attr("id");
-    // console.log({ idParent });
     subject.registerObserver(new Observer(idParent));
   });
 
